@@ -1,0 +1,225 @@
+body {
+  height: 100%;
+  width: 95%;
+  background-color: black;
+  margin: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.overview_1 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: animationBlink_left;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+.overview_2 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  animation-name: animationBlink_right;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+.overview_3 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 750px;
+  left: 950px;
+  animation-name: animationBlink_center;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+@keyframes animationBlink_left {
+  0% {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(213, 255, 243);
+    border-radius: 0%;
+    position: absolute;
+    top: 155px;
+    left: 0px;
+  }
+  50% {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(238, 213, 255);
+    border-radius: 0%;
+    position: absolute;
+    top: 75px;
+    left: 300px;
+  }
+  75% {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 213, 250);
+    border-radius: 25%;
+    position: absolute;
+    top: 55px;
+    left: 500px;
+  }
+  100% {
+    height: 525px;
+    width: 525px;
+    background-color: rgb(253, 50, 165);
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    left: 500px;
+    animation-name: animationBlink_center_hold;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+}
+@keyframes animationBlink_right {
+  0% {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 0%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  25% {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(213, 255, 243);
+    border-radius: 0%;
+    position: absolute;
+    top: 155px;
+    right: 0px;
+  }
+  50% {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(238, 213, 255);
+    border-radius: 0%;
+    position: absolute;
+    top: 75px;
+    right: 300px;
+  }
+  75% {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 213, 250);
+    border-radius: 25%;
+    position: absolute;
+    top: 55px;
+    right: 500px;
+  }
+  100% {
+    height: 525px;
+    width: 525px;
+    background-color: rgb(253, 50, 165);
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    right: 500px;
+    animation-name: animationBlink_center_hold;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+}
+@keyframes animationBlink_center {
+  0% {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 0%;
+    position: absolute;
+    top: 0px;
+    right: 750px;
+    left: 925px;
+  }
+  25% {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(213, 255, 243);
+    border-radius: 0%;
+    position: absolute;
+    top: 155px;
+    right: 750px;
+    left: 900px;
+  }
+  50% {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(238, 213, 255);
+    border-radius: 0%;
+    position: absolute;
+    top: 75px;
+    right: 715px;
+    left: 810px;
+  }
+  75% {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 213, 250);
+    border-radius: 25%;
+    position: absolute;
+    top: 55px;
+    right: 715px;
+    left: 710px;
+    transform: rotate(-45deg);
+  }
+  100% {
+    height: 515px;
+    width: 515px;
+    background-color: rgb(253, 50, 165);
+    position: absolute;
+    top: 260px;
+    right: 720px;
+    left: 700px;
+    transform: rotate(-45deg);
+    animation-name: animationBlink_center_hold;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+}
+@keyframes animationBlink_center_hold {
+  0% {
+    background-color: papayawhip;
+  }
+  25% {
+    background-color: rgb(213, 255, 243);
+  }
+  50% {
+    background-color: rgb(238, 213, 255);
+  }
+  75% {
+    background-color: rgb(255, 213, 250);
+  }
+  100% {
+    background-color: rgb(253, 50, 165);
+  }
+}
