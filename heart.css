@@ -1,6 +1,9 @@
 body {
   background-color: black;
 }
+body::-webkit-scrollbar {
+  width: 0px !important;
+}
 .heart {
   width: 200px;
   height: 200px;
